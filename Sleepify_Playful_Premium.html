@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Sleepify</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:'Fredoka',sans-serif;
+background:linear-gradient(135deg,#fff7e6,#fff,#fef3c7);
+overflow-x:hidden;
+}
+nav{
+position:fixed;top:0;width:100%;
+backdrop-filter:blur(15px);
+background:rgba(255,255,255,.7);
+padding:18px 8%;
+display:flex;justify-content:space-between;
+z-index:1000;
+}
+.logo{font-size:2rem;font-weight:700;color:#d97706}
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:120px 20px;
+background:
+radial-gradient(circle at top left,#fde68a,transparent 30%),
+radial-gradient(circle at bottom right,#fca5a5,transparent 30%),
+linear-gradient(135deg,#fff7ed,#ffffff,#fef9c3);
+}
+.hero h1{
+font-size:6rem;
+background:linear-gradient(45deg,#f59e0b,#ec4899,#8b5cf6);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+.hero p{font-size:1.4rem;max-width:800px;margin:20px auto;color:#444}
+.btn{
+display:inline-block;
+padding:16px 32px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+background:linear-gradient(45deg,#f59e0b,#ec4899);
+color:white;
+box-shadow:0 10px 30px rgba(236,72,153,.3);
+}
+.section{padding:90px 8%}
+.title{
+font-size:3rem;
+text-align:center;
+margin-bottom:50px;
+color:#111827;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+.card{
+background:white;
+border-radius:30px;
+padding:25px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+transition:.3s;
+}
+.card:hover{
+transform:translateY(-10px) rotate(1deg);
+}
+.card .emoji{
+font-size:4rem;
+margin-bottom:10px;
+}
+.card h3{
+font-size:1.7rem;
+color:#d97706;
+margin-bottom:10px;
+}
+.about{
+background:linear-gradient(135deg,#ffffff,#fff7ed);
+padding:50px;
+border-radius:35px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+font-size:1.15rem;
+line-height:1.8;
+}
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+.stat{
+background:linear-gradient(135deg,#f59e0b,#ec4899);
+color:white;
+padding:30px;
+border-radius:25px;
+text-align:center;
+}
+.stat h2{font-size:3rem}
+.contact{
+background:linear-gradient(135deg,#111827,#1f2937);
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+footer{
+background:black;
+color:#aaa;
+text-align:center;
+padding:20px;
+}
+.float{
+position:fixed;
+right:20px;
+bottom:20px;
+padding:18px 22px;
+border-radius:999px;
+background:#25D366;
+color:white;
+text-decoration:none;
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">Sleepify ✨</div>
+<div>Premium Comfort</div>
+</nav>
+
+<section class="hero">
+<div>
+<h1>SLEEPIFY</h1>
+<p>Premium Sleep Solutions For Every Home</p>
+<p>ഓരോ വീടിനും മികച്ച ഉറക്ക സൗകര്യങ്ങൾ</p>
+<br>
+<a class="btn" href="https://wa.me/919847189717">Shop Now</a>
+</div>
+</section>
+
+<section class="section">
+<h2 class="title">Why Customers Love Us</h2>
+<div class="stats">
+<div class="stat"><h2>100%</h2><p>Comfort Focused</p></div>
+<div class="stat"><h2>🚚</h2><p>Home Delivery</p></div>
+<div class="stat"><h2>⭐</h2><p>Premium Quality</p></div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="title">Our Collection</h2>
+<div class="grid">
+<div class="card">
+<div class="emoji">🛏️</div>
+<h3>Luxury Beds</h3>
+<p>Beautiful beds designed for comfort and elegance.</p>
+</div>
+
+<div class="card">
+<div class="emoji">☁️</div>
+<h3>Premium Mattresses</h3>
+<p>Sleep deeper with premium-quality mattresses.</p>
+</div>
+
+<div class="card">
+<div class="emoji">💤</div>
+<h3>Soft Pillows</h3>
+<p>Wake up refreshed every morning.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="about">
+<h2 class="title">About Sleepify</h2>
+<p>
+Sleepify brings luxury, comfort and style together.
+We offer premium beds, mattresses and pillows with delivery service from Edavilangu, Thrissur.
+</p>
+<br>
+<p>
+ഉയർന്ന നിലവാരമുള്ള മെത്തകൾ, കിടക്കകൾ, തലയിണകൾ എന്നിവ മികച്ച സേവനത്തോടെയും ഹോം ഡെലിവറിയോടെയും ലഭ്യമാണ്.
+</p>
+</div>
+</section>
+
+<section class="contact">
+<h2 style="font-size:3rem">Contact Us</h2>
+<br>
+<p>📍 Edavilangu, Thrissur</p>
+<p>📞 9847189717</p>
+<p>🚚 Delivery Available</p>
+<br>
+<a class="btn" href="https://wa.me/919847189717">WhatsApp Order</a>
+</section>
+
+<footer>
+© Sleepify • Luxury Sleep Store
+</footer>
+
+<a class="float" href="https://wa.me/919847189717">WhatsApp</a>
+
+</body>
+</html>
